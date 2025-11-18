@@ -25,7 +25,7 @@ int deleteElement(int arr[], int index, int *currentSize) {
         return 0;
     }
 
-    printf("phan tu vi tri %d có gia tri  %d se duoc  xoa.\n", index, arr[index]);
+    printf("phan tu vi tri %d cÃ³ gia tri  %d se duoc  xoa.\n", index, arr[index]);
 
      
     for (int i = index; i < *currentSize - 1; i++) {
@@ -58,13 +58,14 @@ int main() {
     
      ---
     deleteIndex = currentSize - 1; 
-    printf("\n--- Th? Xóa Ph?n T? Cu?i Cùng ---\n");
+    printf("\nxoa phan tu cuoi cung\n");
     if (deleteElement(myArray, deleteIndex, &currentSize)) {
-        printf("? Xóa thành công.\n");
-        printf("\n--- M?ng Sau Khi Xóa L?n 2 (%d ph?n t?) ---\n", currentSize);
+        printf("xoa thanh cong\n");
+        printf("\nmang sau khi xoa lan 2 con cac phan tu %d\n", currentSize);
         printArray(myArray, currentSize);
     }
 
     return 0;
 }
  
+
