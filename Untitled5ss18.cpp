@@ -4,9 +4,9 @@ void updateElement(int arr[], int newValue, int index, int size) {
     if (index >= 0 && index < size) {
          
         arr[index] = newValue;
-        printf("? Ğ? c?p nh?t thành công: arr[%d] = %d\n", index, newValue);
+        printf("da cap nhat thanh  cong : arr[%d] = %d\n", index, newValue);
     } else {
-        printf("? L?i: Ch? m?c (%d) không h?p l?. Ch? m?c ph?i n?m trong kho?ng [0, %d].\n", index, size - 1);
+        printf(" Loi: Chon muc ko hop le  (%d)  [0, %d].\n", index, size - 1);
     }
 }
 
@@ -27,7 +27,7 @@ int main() {
     int myArray[] = {10, 20, 30, 40, 50};
     int size = sizeof(myArray) / sizeof(myArray[0]);
 
-    printf("--- M?ng G?c Ban Ğ?u (%d ph?n t?) ---\n", size);
+    printf("mang goc ban dau co cac phan tu %d\n", size);
     printArray(myArray, size);
 
     
@@ -35,13 +35,14 @@ int main() {
     int updateIndex = 2;  
 
     
-    printf("\n--- G?i Hàm C?p Nh?t Ph?n T? ---\n");
+    printf("\nhma cap nhat phan tu\n");
     updateElement(myArray, newValue, updateIndex, size);
 
     
-    printf("\n--- M?ng Sau Khi C?p Nh?t ---\n");
+    printf("\nmang sau khi cap nhat la\n");
     printArray(myArray, size);
 
     return 0;
 }
+
 
